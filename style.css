@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+:root {
+    --background-color:rgb(29 31 48);
+    --font-color: rgb(198, 192, 192);
+    --special-color:rgb(185, 107, 136);
+    --special-color-hover: rgb(218 119 155);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body div {
+    background-color: var(--background-color);
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    top: 30%;
+    left: 25%;
+    border-radius: 40px;
+}
+
+button {
+    background-color: var(--special-color);
+    width: 180px;
+    height: 90px;
+    font-size: 18px;
+    border-radius:40px;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: var(--special-color-hover);
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+
+button:focus {
+    outline: none;
+}
+
+span {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: inline-block;
+    color: var(--font-color);
+}
+
+nav {
+    background-color: var(--background-color);
+    height: 100px;
+    width: 100%;
+}
+ul {
+    margin-left: 30%;
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    font-size:36px;
+    padding: 20px 20px 0 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+li a:hover {
+    text-decoration: none;
+    color: var(--special-color);
+    transition-property: color;
+    transition-duration: .5s;
+
+}
